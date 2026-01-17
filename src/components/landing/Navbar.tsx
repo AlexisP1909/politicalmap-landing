@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Compass } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="glass-card mt-4 px-6 py-3 rounded-full flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Compass className="w-6 h-6 text-accent" />
+            <Globe className="w-6 h-6 text-accent" />
             <span className="text-lg font-display font-semibold text-foreground">PoliticalMap</span>
           </div>
 
