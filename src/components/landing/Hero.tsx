@@ -64,12 +64,12 @@ const Hero = () => {
           >
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Global coverage</span>
+              <span>Interactive</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
             <span>Sourced from reliable newspapers</span>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
-            <span>Neutral reports. Get </span>
+            <span>Politically neutral reports. </span>
           </div>
         </div>
       </div>
