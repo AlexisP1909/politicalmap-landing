@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Trust indicators */}
           <div
-            className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-primary-foreground/50 text-sm animate-fade-up"
+            className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 text-primary-foreground/50 text-sm animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
             <div className="flex items-center gap-2">
