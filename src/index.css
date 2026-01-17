@@ -37,8 +37,7 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(0 0% 12%) 0%, hsl(0 0% 18%) 50%, hsl(0 0% 22%) 100%);
-    --accent-gradient: linear-gradient(135deg, hsl(215 90% 55%) 0%, hsl(225 85% 60%) 100%);
+    --hero-bg: 0 0% 15%;
     --glass: hsla(0, 0%, 100%, 0.9);
     --shadow-soft: 0 4px 20px -4px hsla(0, 0%, 0%, 0.1);
     --shadow-accent: 0 8px 30px -8px hsla(215, 90%, 55%, 0.35);
@@ -82,7 +81,7 @@
     --input: 0 0% 20%;
     --ring: 215 90% 55%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(0 0% 14%) 50%, hsl(0 0% 18%) 100%);
+    --hero-bg: 0 0% 12%;
     --glass: hsla(0, 0%, 12%, 0.9);
     --shadow-soft: 0 4px 20px -4px hsla(0, 0%, 0%, 0.4);
 
@@ -113,7 +112,7 @@
 
 @layer components {
   .hero-section {
-    background: var(--hero-gradient);
+    background: hsl(var(--hero-bg));
   }
 
   .glass-card {
@@ -126,17 +125,14 @@
     box-shadow: var(--shadow-accent);
   }
 
-  .text-gradient {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .text-accent {
+    color: hsl(var(--accent));
   }
 
   .pattern-grid {
     background-image: 
-      linear-gradient(hsla(220, 30%, 50%, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsla(220, 30%, 50%, 0.03) 1px, transparent 1px);
+      linear-gradient(hsla(0, 0%, 50%, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsla(0, 0%, 50%, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 }

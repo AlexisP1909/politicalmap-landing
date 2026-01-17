@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Main headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Navigate Politics with{" "}
-            <span className="text-gradient">Clarity</span>
+            <span className="text-accent">Clarity</span>
           </h1>
           
           {/* Subheadline */}
