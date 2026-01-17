@@ -6,74 +6,68 @@ const steps = [
     number: "01",
     icon: MousePointer,
     title: "Explore the Map",
-    description: "Navigate the interactive world map. Click on any country, region, or hotspot to start exploring political events and their impact.",
+    description: "Navigate the interactive world map. Click on any country, region, or hotspot to start exploring political events."
   },
   {
     number: "02",
     icon: MessageSquare,
     title: "Ask Questions",
-    description: "Use the AI chat to ask about any political topic, conflict, or event. Get detailed insights with geographical context.",
+    description: "Use the AI chat to ask about any political topic, conflict, or event. Get detailed insights with geographical context."
   },
   {
     number: "03",
     icon: Lightbulb,
     title: "Visualize Impact",
-    description: "See how events ripple across regions. Understand connections between politics, economics, and geography at a glance.",
-  },
+    description: "See how events ripple across regions. Understand connections between politics, economics, and geography."
+  }
 ];
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 bg-primary text-primary-foreground">
-      <div className="container px-6">
+    <section id="how-it-works" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-accent/5 blur-[120px] pointer-events-none" />
+
+      <div className="container px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4 animate-fade-up">
-            How It Works
-          </h2>
-          <p className="text-lg text-primary-foreground/70 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">How It Works</h2>
+          <p className="text-lg text-white/70">
             Simple, intuitive, and designed to make global politics accessible.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
+        <div className="max-w-4xl mx-auto relative">
+          {/* Connector Line - Absolute across the simplified container */}
+          <div className="absolute left-[2.2rem] top-20 bottom-0 w-0.5 bg-white/10 hidden md:block" />
+
+          <div className="space-y-12">
             {steps.map((step, index) => (
-              <div
-                key={step.number}
-                className="relative flex items-start gap-6 p-6 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 hover:border-accent/50 transition-all duration-300 animate-fade-up"
-                style={{ animationDelay: `${0.15 * (index + 1)}s` }}
-              >
-                {/* Step number */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center">
-                  <span className="text-xl font-bold text-accent-foreground font-display">{step.number}</span>
+              <div key={index} className="relative flex flex-col md:flex-row gap-8 md:items-start group">
+
+                {/* Number Badge */}
+                <div className="flex-shrink-0 z-10 w-16 h-16 rounded-full bg-accent border-4 border-primary flex items-center justify-center shadow-lg shadow-accent/20">
+                  <span className="text-xl font-bold text-white font-display">{step.number}</span>
                 </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <step.icon className="w-5 h-5 text-accent" />
-                    <h3 className="text-xl font-semibold text-primary-foreground">
-                      {step.title}
-                    </h3>
+                {/* Content Card */}
+                <div className="flex-1 p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-accent/40 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <step.icon className="w-6 h-6 text-accent" />
+                    <h3 className="text-2xl font-semibold">{step.title}</h3>
                   </div>
-                  <p className="text-primary-foreground/70 leading-relaxed">
+                  <p className="text-lg text-white/70 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
-
-                {/* Connector line */}
-                {index < steps.length - 1 && (
-                  <div className="absolute left-[2.75rem] top-20 w-0.5 h-8 bg-primary-foreground/20" />
-                )}
               </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="text-center mt-12 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-            <Button variant="default" size="lg" className="group">
+          <div className="mt-16 text-center">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold h-12 px-8">
               Try PoliticalMap Free
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
         </div>

@@ -2,30 +2,25 @@ import { Globe } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-primary text-primary-foreground border-t-0">
+    <footer className="py-12 bg-background border-t border-border">
       <div className="container px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo */}
+
+          {/* Brand */}
           <div className="flex items-center gap-2">
             <Globe className="w-6 h-6 text-accent" />
-            <span className="text-xl font-display font-semibold">PoliticalMap</span>
+            <span className="text-xl font-display font-semibold text-foreground">PoliticalMap</span>
           </div>
 
-          {/* Links */}
-          <nav className="flex items-center gap-8 text-sm">
-            <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-              Terms
-            </a>
-            <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-              Contact
-            </a>
+          {/* Nav */}
+          <nav className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
+            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-foreground transition-colors">Contact Support</a>
           </nav>
 
           {/* Copyright */}
-          <p className="text-sm text-primary-foreground/50">
+          <p className="text-sm text-muted-foreground">
             © 2025 PoliticalMap. All rights reserved.
           </p>
         </div>
