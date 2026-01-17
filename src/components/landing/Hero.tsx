@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-16 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-primary-foreground/50">
+          <div className="mt-32 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-primary-foreground/50">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-accent" />
               Real-time Analysis
