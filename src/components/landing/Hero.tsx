@@ -58,7 +58,7 @@ const Hero = () => {
             style={{ animationDelay: "0.3s" }}
           >
             <Button variant="hero" size="xl" className="group">
-              Explore the Map
+              Explore Beta
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button variant="heroOutline" size="xl">
