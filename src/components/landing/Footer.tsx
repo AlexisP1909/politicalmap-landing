@@ -2,7 +2,7 @@ import { Globe } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-primary text-primary-foreground">
+    <footer className="py-12 bg-primary text-primary-foreground border-t-0">
       <div className="container px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
