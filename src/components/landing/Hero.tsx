@@ -1,11 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, MapPin } from "lucide-react";
+import { ArrowRight, Globe } from "lucide-react";
+
+const WorldMap = () => (
+  <svg
+    viewBox="0 0 1000 500"
+    className="w-full h-auto opacity-20"
+    fill="currentColor"
+  >
+    {/* Simplified world map paths */}
+    <path d="M150,120 Q200,100 250,120 T350,110 Q400,130 450,120 T550,130 Q580,110 620,125 T700,115 Q750,135 800,120 L820,140 Q780,160 750,150 T680,165 Q640,145 600,160 T520,155 Q480,175 440,160 T360,170 Q320,150 280,165 T200,155 Q160,175 130,160 Z" />
+    <path d="M100,180 Q150,160 200,180 T300,175 Q350,195 400,180 T500,190 Q540,170 580,185 T660,175 Q700,195 740,180 T820,190 Q860,170 900,185 L920,220 Q880,240 840,225 T760,240 Q720,220 680,235 T600,225 Q560,245 520,230 T440,245 Q400,225 360,240 T280,230 Q240,250 200,235 T120,250 Q80,230 60,245 L50,210 Z" />
+    <path d="M200,280 Q260,260 320,280 T420,275 Q470,295 520,280 T620,290 Q660,270 700,285 L720,320 Q680,340 640,325 T560,340 Q520,320 480,335 T400,325 Q360,345 320,330 T240,345 Q200,325 180,340 L170,300 Z" />
+    <path d="M600,320 Q650,300 700,320 T780,315 Q820,335 860,320 L880,360 Q840,380 800,365 T720,380 Q680,360 640,375 T580,365 L570,340 Z" />
+    <path d="M750,380 Q800,360 850,380 T920,375 L940,420 Q900,440 860,425 T780,440 Q740,420 720,435 L710,400 Z" />
+  </svg>
+);
 
 const Hero = () => {
   return (
-    <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-9">
+    <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Background pattern */}
       <div className="absolute inset-0 pattern-grid opacity-30" />
+
+      {/* World Map Background */}
+      <div className="absolute inset-0 flex items-center justify-center text-primary-foreground pointer-events-none">
+        <div className="w-full max-w-6xl px-8">
+          <WorldMap />
+        </div>
+      </div>
 
       {/* Floating decorative elements */}
       <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-accent/10 animate-float" />
@@ -68,7 +90,7 @@ const Hero = () => {
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
             <span>Sourced from reliable newspapers</span>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
-            <span>Politically neutral reports. </span>
+            <span>Politically neutral reports</span>
           </div>
         </div>
       </div>
