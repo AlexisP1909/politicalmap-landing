@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Globe, Menu } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -16,14 +16,11 @@ const Navbar = () => {
         {/* CTA */}
         <div className="flex items-center gap-4">
           <Button
-            className="hidden md:flex bg-accent hover:bg-accent/90 text-white border-0" asChild
+            className="flex bg-accent hover:bg-accent/90 text-white border-0" asChild
           >
             <a href="https://political-map-702bd8ed.alpic.live/" target="_blank" rel="noopener noreferrer">
               Launch App
             </a>
-          </Button>
-          <Button variant="ghost" className="md:hidden" size="icon">
-            <Menu className="text-foreground" />
           </Button>
         </div>
       </div>
