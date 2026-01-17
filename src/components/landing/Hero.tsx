@@ -67,9 +67,9 @@ const Hero = () => {
               <span>Global coverage</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
-            <span>Real-time updates</span>
+            <span>Sourced from reliable newspapers</span>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
-            <span>Free to start</span>
+            <span>Neutral reports. Get </span>
           </div>
         </div>
       </div>
