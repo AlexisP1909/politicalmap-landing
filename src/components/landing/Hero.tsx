@@ -4,7 +4,7 @@ import worldMap from "@/assets/world.svg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-primary text-primary-foreground">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-primary text-primary-foreground">
       {/* Background Map - Full Width */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
         <img
@@ -20,11 +20,7 @@ const Hero = () => {
       <div className="container relative z-10 px-6">
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 border border-accent/30 text-accent mb-8">
-            <Globe className="w-4 h-4" />
-            <span className="text-sm font-medium text-white">AI-Powered Political Insights</span>
-          </div>
+
 
           {/* Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
@@ -33,9 +29,7 @@ const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-primary-foreground/70 mb-10 max-w-2xl mx-auto">
-            Get real-time political insights and visualize the geographical impact of world events through an interactive AI-powered map.
-          </p>
+
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
