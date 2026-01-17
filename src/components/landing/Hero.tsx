@@ -19,8 +19,6 @@ const WorldMap = () => (
 const Hero = () => {
   return (
     <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-9">
-      {/* Background pattern */}
-      <div className="absolute inset-0 pattern-grid opacity-30" />
 
       {/* World Map Background */}
       <div className="absolute inset-0 flex items-center justify-center text-primary-foreground pointer-events-none">
