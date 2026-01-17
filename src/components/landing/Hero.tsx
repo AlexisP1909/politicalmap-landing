@@ -33,9 +33,11 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[160px] h-12 text-lg">
-              Explore Beta
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white min-w-[160px] h-12 text-lg" asChild>
+              <a href="https://political-map-702bd8ed.alpic.live/" target="_blank" rel="noopener noreferrer">
+                Explore Beta
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-white/20 text-white/70 hover:text-white hover:bg-white/10 min-w-[160px] h-12 text-lg" asChild>
               <a href="#how-it-works">
@@ -44,7 +46,7 @@ const Hero = () => {
             </Button>
           </div>
 
-    
+
         </div>
       </div>
     </section>
