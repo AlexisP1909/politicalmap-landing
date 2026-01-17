@@ -39,7 +39,7 @@ const HowItWorks = () => {
 
         <div className="max-w-4xl mx-auto relative">
           {/* Connector Line - Absolute across the simplified container */}
-          <div className="absolute left-[2.2rem] top-20 bottom-0 w-0.5 bg-white/10 hidden md:block" />
+          <div className="absolute left-8 top-8 bottom-0 w-0.5 bg-white/10 hidden md:block" />
 
           <div className="space-y-12">
             {steps.map((step, index) => (
