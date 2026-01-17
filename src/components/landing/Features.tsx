@@ -40,7 +40,7 @@ const Features = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-up">
             Make Sense of the{" "}
-            <span className="text-gradient">Political Landscape</span>
+            <span className="text-accent">Political Landscape</span>
           </h2>
           <p className="text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s' }}>
             PoliticalMap uses advanced AI to help you navigate complex political terrain 
