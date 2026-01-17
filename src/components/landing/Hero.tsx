@@ -29,17 +29,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-accent/10 animate-float" />
-      <div
-        className="absolute bottom-32 right-20 w-32 h-32 rounded-full bg-accent/5 animate-float"
-        style={{ animationDelay: "1s" }}
-      />
-      <div
-        className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-accent/10 animate-float"
-        style={{ animationDelay: "2s" }}
-      />
-
       <div className="container relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
