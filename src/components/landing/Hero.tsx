@@ -12,7 +12,7 @@ const Hero = () => {
           <img 
             src={worldMap} 
             alt="World map" 
-            className="w-full h-auto [filter:brightness(0)_invert(1)]"
+            className="w-full h-auto [filter:brightness(0)_invert(1)] [&_path]:stroke-none"
           />
         </div>
       </div>
