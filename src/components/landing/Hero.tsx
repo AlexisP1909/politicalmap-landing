@@ -63,7 +63,6 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
               <span>Interactive</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-primary-foreground/30" />
