@@ -1,35 +1,35 @@
-import { Map, MessageCircle, Scale, Users, Zap, Shield } from "lucide-react";
+import { Globe, MessageCircle, TrendingUp, MapPin, Zap, Eye } from "lucide-react";
 
 const features = [
   {
-    icon: Map,
-    title: "Political Mapping",
-    description: "Visualize where ideas, politicians, and policies sit on the political spectrum with nuanced, multi-dimensional analysis.",
+    icon: Globe,
+    title: "Interactive World Map",
+    description: "Explore an AI-powered map that visualizes political events, conflicts, and developments across the globe in real-time.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Impact Analysis",
+    description: "Understand how world events affect different regions. See economic, social, and political ripple effects visualized geographically.",
   },
   {
     icon: MessageCircle,
-    title: "Smart Conversations",
-    description: "Engage in thoughtful discussions about political topics. Ask questions, get balanced perspectives, and deepen your understanding.",
+    title: "AI-Powered Insights",
+    description: "Ask questions about any region or event. Get detailed, context-rich answers powered by ChatGPT.",
   },
   {
-    icon: Scale,
-    title: "Balanced Perspectives",
-    description: "Explore arguments from all sides. PoliticalMap presents diverse viewpoints without pushing any particular agenda.",
+    icon: MapPin,
+    title: "Regional Deep Dives",
+    description: "Click any country or region to get comprehensive political analysis, key players, and historical context.",
   },
   {
     icon: Zap,
-    title: "Real-Time Analysis",
-    description: "Stay current with AI-powered analysis of breaking political news, policies, and debates as they unfold.",
+    title: "Real-Time Updates",
+    description: "Stay current with breaking political developments. The map updates as events unfold around the world.",
   },
   {
-    icon: Users,
-    title: "Understand Voters",
-    description: "Gain insights into different voter demographics, their concerns, and what drives their political choices.",
-  },
-  {
-    icon: Shield,
-    title: "Fact-First Approach",
-    description: "Built on verified information with clear sourcing. Know where the data comes from and how conclusions are drawn.",
+    icon: Eye,
+    title: "Multiple Perspectives",
+    description: "View events through different lenses—economic, humanitarian, geopolitical—to get a complete picture.",
   },
 ];
 
@@ -39,12 +39,12 @@ const Features = () => {
       <div className="container px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-up">
-            Make Sense of the{" "}
-            <span className="text-accent">Political Landscape</span>
+            Understand Global Events{" "}
+            <span className="text-accent">Geographically</span>
           </h2>
           <p className="text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            PoliticalMap uses advanced AI to help you navigate complex political terrain 
-            with clarity and confidence.
+            PoliticalMap combines AI intelligence with interactive mapping to help you 
+            see the full picture of world events.
           </p>
         </div>
 

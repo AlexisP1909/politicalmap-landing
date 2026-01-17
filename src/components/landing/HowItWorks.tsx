@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Lightbulb, Target } from "lucide-react";
+import { ArrowRight, MousePointer, MessageSquare, Lightbulb } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    icon: MessageSquare,
-    title: "Ask Your Question",
-    description: "Type any political question, topic, or issue you want to understand better. From policy details to ideological positions.",
+    icon: MousePointer,
+    title: "Explore the Map",
+    description: "Navigate the interactive world map. Click on any country, region, or hotspot to start exploring political events and their impact.",
   },
   {
     number: "02",
-    icon: Lightbulb,
-    title: "Get Balanced Analysis",
-    description: "PoliticalMap analyzes your query and presents multiple perspectives, historical context, and relevant data points.",
+    icon: MessageSquare,
+    title: "Ask Questions",
+    description: "Use the AI chat to ask about any political topic, conflict, or event. Get detailed insights with geographical context.",
   },
   {
     number: "03",
-    icon: Target,
-    title: "Map Your Understanding",
-    description: "See where ideas fit on the political spectrum. Understand relationships between positions and form your own informed views.",
+    icon: Lightbulb,
+    title: "Visualize Impact",
+    description: "See how events ripple across regions. Understand connections between politics, economics, and geography at a glance.",
   },
 ];
 
@@ -31,7 +31,7 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Simple, powerful, and designed to enhance your political understanding.
+            Simple, intuitive, and designed to make global politics accessible.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { Compass } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Compass className="w-6 h-6 text-accent" />
+            <Globe className="w-6 h-6 text-accent" />
             <span className="text-xl font-display font-semibold">PoliticalMap</span>
           </div>
 
