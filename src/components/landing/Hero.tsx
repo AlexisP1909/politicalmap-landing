@@ -47,9 +47,11 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            <Button variant="hero" size="xl" className="group">
-              Explore Beta
-              <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a href="https://political-map-702bd8ed.alpic.live/" target="_blank" rel="noopener noreferrer">
+                Explore Beta
+                <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button variant="heroOutline" size="xl">
               See How It Works
