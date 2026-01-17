@@ -24,13 +24,13 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="py-24 bg-primary text-primary-foreground">
       <div className="container px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-up">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4 animate-fade-up">
             How It Works
           </h2>
-          <p className="text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-lg text-primary-foreground/70 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Simple, intuitive, and designed to make global politics accessible.
           </p>
         </div>
@@ -40,30 +40,30 @@ const HowItWorks = () => {
             {steps.map((step, index) => (
               <div
                 key={step.number}
-                className="relative flex items-start gap-6 p-6 rounded-xl bg-card border border-border/50 hover:shadow-lg transition-all duration-300 animate-fade-up"
+                className="relative flex items-start gap-6 p-6 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 hover:border-accent/50 transition-all duration-300 animate-fade-up"
                 style={{ animationDelay: `${0.15 * (index + 1)}s` }}
               >
                 {/* Step number */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-xl font-bold text-primary-foreground font-display">{step.number}</span>
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center">
+                  <span className="text-xl font-bold text-accent-foreground font-display">{step.number}</span>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <step.icon className="w-5 h-5 text-accent" />
-                    <h3 className="text-xl font-semibold text-foreground">
+                    <h3 className="text-xl font-semibold text-primary-foreground">
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary-foreground/70 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Connector line */}
                 {index < steps.length - 1 && (
-                  <div className="absolute left-[2.75rem] top-20 w-0.5 h-8 bg-border" />
+                  <div className="absolute left-[2.75rem] top-20 w-0.5 h-8 bg-primary-foreground/20" />
                 )}
               </div>
             ))}
