@@ -17,13 +17,13 @@ const Hero = () => {
       {/* Gradient Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30 pointer-events-none" />
 
-      <div className="container relative z-10 px-6">
+      <div className="container z-10 px-6">
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
 
 
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-20 tracking-tight">
             Explore the world through <br />
             <span className="text-accent">Political Insights</span>
           </h1>
@@ -44,22 +44,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-32 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-primary-foreground/50">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-              Real-time Analysis
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-              Trusted Sources
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-              Global Coverage
-            </div>
-          </div>
-
+    
         </div>
       </div>
     </section>
