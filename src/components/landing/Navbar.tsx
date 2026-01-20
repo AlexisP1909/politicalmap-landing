@@ -18,7 +18,7 @@ const Navbar = () => {
           <Button
             className="flex bg-accent hover:bg-accent/90 text-white border-0" asChild
           >
-            <a href="https://political-map-702bd8ed.alpic.live//try" target="_blank" rel="noopener noreferrer">
+            <a href="https://polimapfix-5f912d17.alpic.live/try" target="_blank" rel="noopener noreferrer">
               Launch App
             </a>
           </Button>

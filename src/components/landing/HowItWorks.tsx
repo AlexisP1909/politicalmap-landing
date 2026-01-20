@@ -66,7 +66,7 @@ const HowItWorks = () => {
 
           <div className="mt-16 text-center">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold h-12 px-8" asChild>
-              <a href="https://political-map-702bd8ed.alpic.live//try" target="_blank" rel="noopener noreferrer">
+              <a href="https://polimapfix-5f912d17.alpic.live/try" target="_blank" rel="noopener noreferrer">
                 Try PoliticalMap Free
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
